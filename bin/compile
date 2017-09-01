@@ -68,4 +68,5 @@ fi
 
 echo "Building app" | arrow
 cd $BUILD_DIR
-eval $NIMBLE_BIN build --accept $BUILD_FLAGS
+echo $NIMBLE_BIN build --accept $BUILD_FLAGS
+eval "$NIMBLE_BIN build --accept $BUILD_FLAGS"
