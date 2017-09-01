@@ -32,6 +32,10 @@ export PATH
 mkdir -p $HOME/.config/nimble
 cat <<EOF > $HOME/.config/nimble/nimble.ini
 nimbleDir = r"$NIMBLE_DIR"
+
+[PackageList]
+name = "official"
+url = "https://github.com/nim-lang/packages/raw/master/packages.json"
 EOF
 
 if [ ! -x $NIM_BIN ]; then
